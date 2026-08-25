@@ -1,4 +1,4 @@
-import { CaseHeader, Section } from "@/app/components/case-study";
+import { CaseHeader, LiveLink, Section } from "@/app/components/case-study";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,6 +13,12 @@ export default function ZazuPage() {
         tagline="2-Minute Shopping — order and pay over Telegram, collect from a kiosk without waiting."
         stack={["Telegram Bot API", "Paystack", "Crypto wallet"]}
         status="Live — first intended partnership with Bokku Mart"
+      />
+
+      <LiveLink
+        href="https://t.me/asap_vendor_bot"
+        label="Try the bot on Telegram"
+        note="Live production, tied to Bokku Mart's real inventory. Browse the menu — please don't complete a real order."
       />
 
       <Section title="The problem">

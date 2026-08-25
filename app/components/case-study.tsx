@@ -37,6 +37,31 @@ export function CaseHeader({
   );
 }
 
+export function LiveLink({
+  href,
+  label,
+  note,
+}: {
+  href: string;
+  label: string;
+  note?: string;
+}) {
+  return (
+    <div className="mt-6">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1.5 rounded-md border border-border px-4 py-2 font-mono text-xs uppercase tracking-widest text-foreground transition-colors hover:border-accent hover:text-accent"
+      >
+        {label}
+        <span aria-hidden="true">→</span>
+      </a>
+      {note && <p className="mt-2 max-w-md text-xs text-muted">{note}</p>}
+    </div>
+  );
+}
+
 export function Section({
   title,
   children,

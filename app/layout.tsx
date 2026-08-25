@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Adrian Ovwigho",
   description:
-    "Backend engineer working on distributed systems — ASAP Switch, Zazu, and Casa.",
+    "Backend engineer working on distributed systems — ASAP Switch, Zazu, and Kasa.",
 };
 
 const work = [
   { href: "/work/asap-switch", label: "ASAP Switch" },
   { href: "/work/zazu", label: "Zazu" },
-  { href: "/work/casa", label: "Casa" },
+  { href: "/work/kasa", label: "Kasa" },
 ];
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,19 +1,21 @@
-import { CaseHeader, Section } from "@/app/components/case-study";
+import { CaseHeader, LiveLink, Section } from "@/app/components/case-study";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Casa — Adrian Ovwigho",
+  title: "Kasa — Adrian Ovwigho",
 };
 
-export default function CasaPage() {
+export default function KasaPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
       <CaseHeader
-        name="Casa"
+        name="Kasa"
         tagline="Post what you're looking for. Agents bid on it. You pick who to talk to."
         stack={["PWA", "Feed architecture"]}
         status="Live"
       />
+
+      <LiveLink href="https://getkasa.ng" label="View live" />
 
       <Section title="The problem">
         <p>
@@ -26,7 +28,7 @@ export default function CasaPage() {
 
       <Section title="What it is">
         <p>
-          Casa (formerly Kiwi) flips the listing model: customers post a
+          Kasa (formerly Kiwi) flips the listing model: customers post a
           &ldquo;seek&rdquo; describing what they want, agents bid on it,
           and the customer picks who to negotiate with directly. Deal flow
           runs seek → bids → selection → negotiation → agreement →

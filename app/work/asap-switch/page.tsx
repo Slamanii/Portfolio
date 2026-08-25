@@ -1,4 +1,4 @@
-import { CaseHeader, Section } from "@/app/components/case-study";
+import { CaseHeader, LiveLink, Section } from "@/app/components/case-study";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,6 +13,12 @@ export default function AsapSwitchPage() {
         tagline="A neutral logistics clearing house, modeled on how banks settle between each other."
         stack={["Rust", "Actix-web", "Diesel", "PostgreSQL"]}
         status="Pilot live — Gwarinpa"
+      />
+
+      <LiveLink
+        href="https://asap-apps.vercel.app"
+        label="View live"
+        note="Vendor and rider onboarding, plus package tracking. Live production — browsing is safe, but onboarding forms are real."
       />
 
       <Section title="The problem">
