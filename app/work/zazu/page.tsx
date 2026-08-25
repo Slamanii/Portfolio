@@ -12,7 +12,7 @@ export default function ZazuPage() {
         name="Zazu"
         tagline="2-Minute Shopping — order and pay over Telegram, collect from a kiosk without waiting."
         stack={["Telegram Bot API", "Paystack", "Crypto wallet"]}
-        status="Live — first partner Bokku Mart"
+        status="Live — first intended partnership with Bokku Mart"
       />
 
       <Section title="The problem">

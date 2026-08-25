@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ContactForm } from "@/app/components/contact-form";
 
 const projects = [
   {
@@ -18,8 +19,8 @@ const projects = [
     status: "Live — first partner Bokku Mart",
   },
   {
-    href: "/work/casa",
-    name: "Casa",
+    href: "/work/kasa",
+    name: "Kasa",
     tagline:
       "Post what you're looking for. Agents bid on it. You pick who to talk to.",
     stack: ["PWA", "Feed architecture"],
@@ -78,6 +79,27 @@ export default function Home() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="mt-16">
+        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+          Get in touch
+        </h2>
+        <ContactForm />
+      </section>
+
+      <section className="mt-16">
+        <h2 className="font-mono text-xs uppercase tracking-widest text-muted">
+          How this works
+        </h2>
+        <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
+          A backend is code that runs on a server, not in your browser, so it
+          can hold secrets and call other services safely. Submit the form
+          and your browser sends the fields to a server action on this site;
+          that function validates them, then calls the Resend API with a
+          private key to email me. Your browser never touches the key, and
+          you get a success or error message back either way.
+        </p>
       </section>
     </div>
   );
