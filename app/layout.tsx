@@ -16,7 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Adrian Ovwigho",
   description:
-    "Backend engineer working on distributed systems — ASAP Switch, Zazu, and Kasa.",
+    "Backend engineer working on distributed systems — ASAP Switch, Zazu and Kasa.",
+  openGraph: {
+    title: "Adrian Ovwigho",
+    description: "I build systems that settle, route, and hold under real traffic.",
+  },
 };
 
 const work = [
